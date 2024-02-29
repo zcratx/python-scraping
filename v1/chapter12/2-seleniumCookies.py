@@ -16,3 +16,4 @@ for cookie in savedCookies:
 driver2.get("http://pythonscraping.com")
 driver.implicitly_wait(1)
 print(driver2.get_cookies())
+
