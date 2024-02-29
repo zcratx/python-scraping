@@ -18,10 +18,10 @@ driver.get('https://pp.seismic.com/app#/doccenter/1f0a02a2-5310-4f1b-9158-63c37a
 time.sleep(60)
 try:
 
-    element = WebDriverWait(driver, 20).until(EC.presence_of_element_located(By.CLASS_NAME, 'seismic-next-ui ng-scope'))
+    element = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, 'seismic-next-ui')))
 
 finally:
-    print(driver.find_element(By.CLASS_NAME, 'seismic-next-ui ng-scope').text)
+    print(driver.find_element(By.CLASS_NAME, 'seismic-next-ui').text)
 
     #print("The important thing from driver.get_log('performance')", driver.get_log('performance'))
 
